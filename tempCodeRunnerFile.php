@@ -1,10 +1,11 @@
 <?php
-echo "escreva um numero para parecer a taboada";
-$numero =  trim(fgets(STDIN));
-$multi = 0;
+echo " escreva um numero: ";
+$numero = trim(fgets(STDIN));
+$fatorial = 1;
 
-while ($multi <= 10){
-    $valor = $multi * $numero;
-    echo $valor, "\n";
-    $multi++;
+for ($x = 1; $x <= $numero; $x++){
+    $fatorial = $fatorial * $x;
+
 };
+
+echo " O fatorial do numero", $numero, "é ", $fatorial;

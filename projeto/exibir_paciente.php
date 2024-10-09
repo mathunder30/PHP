@@ -25,8 +25,8 @@ session_start();
 
 
     } else{
-        echo "<p>Não há dados para exibir.</p>"
-    }
+        echo "<p>Não há dados para exibir.</p>";
+    };
     
      // Limpa os dados da sessão após exibi-los (opcional)
      session_unset();  // Remove todas as variáveis de sessão

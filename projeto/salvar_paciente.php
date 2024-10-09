@@ -17,7 +17,7 @@ $diagnostico = $_POST['diagnostico'];
 
 
 // Preparando o SQL para inserir os dados digitados no formulario
-$sql = 'INSERT INTO paciente (nome, idade, genero, diagnostico) VALUES ('$nome', '$idade', '$genero', '$diagnostico')';
+$sql = "INSERT INTO paciente (nome, idade, genero, diagnostico) VALUES ('$nome', '$idade', '$genero', '$diagnostico')";
 
 
 // criei uma condição para ser executado a inserçãp

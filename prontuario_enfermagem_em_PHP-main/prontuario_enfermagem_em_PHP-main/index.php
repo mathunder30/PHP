@@ -4,25 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dados do Paciente</title>
-    <link rel="stylesheet" href="informacao_pessoais_paciente.css">
+   
     
 </head>
 <body>
     <section class="container">
         <div>
         <h2>Dados do Paciente</h2>
-        <form action="salvar_dados.php" method="POST" id="editarFormulario">
+        <form action="salvar_dados.php" method="POST"  id="editarFormulario">
             <label for="nome">Nome</label>
             <input type="text" id="nome" name="nome" required>
 
-            <label for="data">Data de Nascimento</label>
-            <input type="date" id="data" name="data" required>
+            <label for="data_de_nascimento">Data de Nascimento</label>
+            <input type="date" id="data_de_nascimento" name="data_de_nascimento" required>
 
             <label for="idade">Idade</label>
             <input type="number" id="idade" name="idade" required>
 
-            <label for="sexo">Sexo</label>
-            <input type="text" id="sexo" name="sexo" required>
+            <label for="genero">Gênero</label>
+            <input type="text" id="genero" name="genero" required>
 
             <label for="cpf">CPF</label>
             <input type="text" id="cpf" name="cpf"  required>
@@ -33,7 +33,7 @@
             <label for="endereco">Endereço</label>
             <input type="text" id="endereco" name="endereco"  required>
             
-            <input type="submit" value="Salvar Alteraçoes">
+            <button type="submit">Salvar</button>
         </form> 
         </div>
 
@@ -45,6 +45,6 @@
 
     </section>
 
-    
+ 
 </body>
 </html>

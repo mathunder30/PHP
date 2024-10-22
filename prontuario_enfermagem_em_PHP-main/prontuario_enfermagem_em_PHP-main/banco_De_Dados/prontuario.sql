@@ -13,13 +13,12 @@ telefone varchar(15),
 endereco varchar(100)
 );
 
-CREATE TABLE medicamento(
+create table triagem (
     id int auto_increment primary key,
     dados_pacientes_id int,
-    nome_medicamento VARCHAR(255) not null,
-    dosagem VARCHAR(255) not null,
-    frequencia varchar (255) not null,
-    data_inicio DATE,
-    data_fim DATE,
-    foreign key (dados_pacientes_id) REFERENCES dados_pacientes(id)
+    temperatura int,
+    pressao_arterial int,
+    frequencia_cardiaca int,
+    obs_paciente varchar (255) not null,  
+    foreign key (dados_pacientes_id) references dados_pacientes(id) 
 );
